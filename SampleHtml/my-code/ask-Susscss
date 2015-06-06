@@ -1,0 +1,30 @@
+<html>
+<!-- saved from url=(0014)about:internet -->
+<head>
+<title>Hello, You</title>
+<script>
+function doIt()
+{
+    var text = questionText.value + " " + answerText.value;
+    helloTarget.innerText = text;
+}
+</script>
+
+</head>
+
+<body>
+<H1>Hello, You</H1>
+<p>
+What is your question: 
+<input type="text" id="questionText" />
+</p>
+<p>
+What is the answer:
+<input type="text" id="answerText" />
+</p>
+<p>
+<button onclick="doIt();">Do it!</button>
+</p>
+<p><span id="helloTarget"></span></p>
+</body>
+</html>

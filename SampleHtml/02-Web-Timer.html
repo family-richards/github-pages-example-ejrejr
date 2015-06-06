@@ -1,0 +1,35 @@
+<html>
+<!-- saved from url=(0014)about:internet -->
+<head>
+<script>
+var timerValue = 60;
+
+function updateTimer()
+{
+	timerValue = timerValue - 1;
+	web_timer.innerText = timerValue;
+
+	if (timerValue > 0)
+	{
+		setTimeout(updateTimer, 1000);
+	}
+}
+</script>
+<title>
+web timer
+</title>
+</head>
+<body>
+<h1>
+web timer
+</h1>
+<p>
+<font size="24">
+<span id="web_timer" onclick="setTimeout(updateTimer, 1000);">
+60
+</span>
+</font>
+</p>
+</body>
+</html>
+
